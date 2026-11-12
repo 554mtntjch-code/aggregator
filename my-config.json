@@ -148,7 +148,7 @@
             "targets": {
                 "clash": "free-clash",
                 "singbox": "free-singbox",
-                "v2ray": "free-v2ray"
+                "mixed": "free-v2ray"
             },
             "regularize": {
                 "enable": false,
