@@ -1,4 +1,6 @@
 {
+    "delay": 3000,
+    "max_rate": 1.5,
     "sites": [
         {
             "name": "ssrsub",
@@ -15,7 +17,124 @@
             ],
             "ignore_default_exclude": true,
             "check_alive": true,
-            "max_rate": 2.5,
+            "max_rate": 1.5,
+            "count": 2,
+            "coupon": "",
+            "require_tls": false,
+            "renew": {
+                "accounts": [
+                    {
+                        "email": "",
+                        "password": "",
+                        "ticket": {
+                            "enable": true,
+                            "auto_reset": false,
+                            "subject": "",
+                            "message": "",
+                            "level": 1
+                        }
+                    }
+                ],
+                "plan_id": 3,
+                "package": "",
+                "method": 1,
+                "coupon_code": ""
+            }
+        },
+        {
+            "name": "pawdroid",
+            "subscribe": [
+                "https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub"
+            ],
+            "domain": "",
+            "enable": true,
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "push_to": [
+                "free"
+            ],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 1.5,
+            "count": 2,
+            "coupon": "",
+            "require_tls": false,
+            "renew": {
+                "accounts": [
+                    {
+                        "email": "",
+                        "password": "",
+                        "ticket": {
+                            "enable": true,
+                            "auto_reset": false,
+                            "subject": "",
+                            "message": "",
+                            "level": 1
+                        }
+                    }
+                ],
+                "plan_id": 3,
+                "package": "",
+                "method": 1,
+                "coupon_code": ""
+            }
+        },
+        {
+            "name": "zhuhaiuk",
+            "subscribe": [
+                "https://raw.githubusercontent.com/zhuhaiuk/free-nodes/main/nodes.txt"
+            ],
+            "domain": "",
+            "enable": true,
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "push_to": [
+                "free"
+            ],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 1.5,
+            "count": 2,
+            "coupon": "",
+            "require_tls": false,
+            "renew": {
+                "accounts": [
+                    {
+                        "email": "",
+                        "password": "",
+                        "ticket": {
+                            "enable": true,
+                            "auto_reset": false,
+                            "subject": "",
+                            "message": "",
+                            "level": 1
+                        }
+                    }
+                ],
+                "plan_id": 3,
+                "package": "",
+                "method": 1,
+                "coupon_code": ""
+            }
+        },
+        {
+            "name": "kooker",
+            "subscribe": [
+                "https://raw.githubusercontent.com/kooker/FreeSubsCheck/main/base64.txt"
+            ],
+            "domain": "",
+            "enable": true,
+            "rename": "",
+            "include": "",
+            "exclude": "",
+            "push_to": [
+                "free"
+            ],
+            "ignore_default_exclude": true,
+            "check_alive": true,
+            "max_rate": 1.5,
             "count": 2,
             "coupon": "",
             "require_tls": false,
