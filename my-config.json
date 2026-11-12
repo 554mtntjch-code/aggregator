@@ -118,18 +118,7 @@
                 }
             }
         },
-        "repositories": {
-            "enable": false,
-            "channels": {
-                "2026": {
-                    "paths": [
-                        "*"
-                    ],
-                    "file": "Crawl.txt",
-                    "push_to": []
-                }
-            }
-        },
+        "repositories": [],
         "pages": [
             {
                 "enable": true,
