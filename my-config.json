@@ -1,14 +1,18 @@
 {
     "sites": [
         {
-            "name": "",
-            "subscribe": [],
+            "name": "ssrsub",
+            "subscribe": [
+                "https://raw.githubusercontent.com/ssrsub/ssr/master/v2ray"
+            ],
             "domain": "",
             "enable": true,
             "rename": "",
             "include": "",
             "exclude": "",
-            "push_to": [],
+            "push_to": [
+                "free"
+            ],
             "ignore_default_exclude": true,
             "check_alive": true,
             "max_rate": 2.5,
@@ -55,45 +59,56 @@
             "pages": 5,
             "exclude": "",
             "channels": {
-                "channel": {
+                "SSRSUB": {
                     "include": "",
                     "exclude": "",
                     "task": {
                         "rename": ""
                     },
-                    "push_to": []
+                    "push_to": [
+                        "free"
+                    ]
+                },
+                "v2rayfree": {
+                    "include": "",
+                    "exclude": "",
+                    "task": {
+                        "rename": ""
+                    },
+                    "push_to": [
+                        "free"
+                    ]
                 }
             }
         },
         "google": {
-            "enable": false,
-            "exclude": "",
+            "enable": true,
             "limit": 100,
             "days": 7,
             "exclude_sites": [],
-            "push_to": []
+            "push_to": [
+                "free"
+            ]
         },
         "yandex": {
-            "enable": false,
-            "exclude": "",
+            "enable": true,
             "days": 3,
             "pages": 5,
             "exclude_sites": [],
-            "push_to": []
+            "push_to": [
+                "free"
+            ]
         },
         "github": {
-            "enable": true,
+            "enable": false,
             "pages": 2,
-            "push_to": [],
-            "exclude": "",
-            "exclude_repos": []
+            "exclude_sites": [],
+            "push_to": []
         },
         "twitter": {
-            "enable": true,
+            "enable": false,
             "users": {
                 "username": {
-                    "enable": true,
-                    "tweets": 30,
                     "include": "",
                     "exclude": "",
                     "task": {
@@ -103,102 +118,83 @@
                 }
             }
         },
-        "repositories": [
-            {
-                "enable": false,
-                "username": "",
-                "repo": "",
-                "commits": 3,
-                "exclude": "",
-                "push_to": []
+        "repositories": {
+            "enable": false,
+            "channels": {
+                "2026": {
+                    "paths": [
+                        "*"
+                    ],
+                    "file": "Crawl.txt",
+                    "push_to": []
+                }
             }
-        ],
+        },
         "pages": [
             {
                 "enable": true,
                 "url": "",
-                "include": "",
-                "exclude": "",
-                "paged": true,
-                "placeholder": "",
-                "start": 1,
-                "end": 10,
-                "task": {
-                    "rename": ""
-                },
                 "push_to": []
             }
         ],
-        "scripts": [
-            {
-                "enable": false,
-                "plugin": "dynamic",
-                "persist": "",
-                "task": {
-                    "enable": true,
-                    "check_alive": true,
-                    "exclude": "",
-                    "rename": "",
-                    "push_to": []
-                }
-            }
-        ]
+        "scripts": {
+            "enable": true,
+            "paths": [
+                "crawl.py"
+            ]
+        }
     },
     "groups": {
         "free": {
             "emoji": true,
             "list_only": true,
-            "targets": {
-                "clash": "free-clash",
-                "singbox": "free-singbox",
-                "v2ray": "free-v2ray"
-            },
-            "regularize": {
-                "enable": false,
-                "locate": true,
-                "residential": true,
-                "digits": 2
-            }
+            "targets": [
+                "free-clash",
+                "free-singbox",
+                "free-v2ray"
+            ]
         }
     },
     "storage": {
         "engine": "gist",
         "base": "https://api.github.com/gists",
         "domain": "https://gist.github.com",
-        "items": {
-            "free-clash": {
+        "items": [
+            {
                 "username": "554mtntjch-code",
-                "folder_id": "",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "filename": "clash.yaml"
+                "name": "free-clash",
+                "file": "clash.yaml"
             },
-            "free-singbox": {
+            {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "filename": "singbox.json"
+                "name": "free-singbox",
+                "file": "singbox.json"
             },
-            "free-v2ray": {
+            {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "filename": "v2ray.txt"
+                "name": "free-v2ray",
+                "file": "v2ray.txt"
             },
-            "crawledsubs": {
+            {
                 "username": "554mtntjch-code",
-                "folder_id": "",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "filename": "crawledsubs.json"
+                "name": "crawledsubs",
+                "file": "crawledsubs.json"
             },
-            "crawledproxies": {
+            {
                 "username": "554mtntjch-code",
-                "folder_id": "",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "filename": "crawledproxies.json"
+                "name": "crawledproxies",
+                "file": "crawledproxies.json"
             }
-        }
+        ]
     }
 }
