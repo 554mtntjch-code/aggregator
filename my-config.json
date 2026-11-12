@@ -137,64 +137,73 @@
                 "push_to": []
             }
         ],
-        "scripts": {
-            "enable": true,
-            "paths": [
-                "crawl.py"
-            ]
-        }
+        "scripts": [
+            {
+                "enable": false,
+                "plugin": "dynamic",
+                "persist": "",
+                "task": {
+                    "enable": true,
+                    "check_alive": true,
+                    "exclude": "",
+                    "rename": "",
+                    "push_to": []
+                }
+            }
+        ]
     },
     "groups": {
         "free": {
             "emoji": true,
             "list_only": true,
-            "targets": [
-                "free-clash",
-                "free-singbox",
-                "free-v2ray"
-            ]
+            "targets": {
+                "clash": "free-clash",
+                "singbox": "free-singbox",
+                "v2ray": "free-v2ray"
+            },
+            "regularize": {
+                "enable": false,
+                "locate": true,
+                "residential": true,
+                "digits": 2
+            }
         }
     },
     "storage": {
         "engine": "gist",
         "base": "https://api.github.com/gists",
         "domain": "https://gist.github.com",
-        "items": [
-            {
+        "items": {
+            "free-clash": {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "name": "free-clash",
-                "file": "clash.yaml"
+                "filename": "clash.yaml"
             },
-            {
+            "free-singbox": {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "name": "free-singbox",
-                "file": "singbox.json"
+                "filename": "singbox.json"
             },
-            {
+            "free-v2ray": {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "name": "free-v2ray",
-                "file": "v2ray.txt"
+                "filename": "v2ray.txt"
             },
-            {
+            "crawledsubs": {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "name": "crawledsubs",
-                "file": "crawledsubs.json"
+                "filename": "crawledsubs.json"
             },
-            {
+            "crawledproxies": {
                 "username": "554mtntjch-code",
                 "file_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
                 "gist_id": "3a1a5e147050f64d72d5b8f5c6d4d61c",
-                "name": "crawledproxies",
-                "file": "crawledproxies.json"
+                "filename": "crawledproxies.json"
             }
-        ]
+        }
     }
 }
